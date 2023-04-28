@@ -53,4 +53,10 @@
  margin: 0 auto;
  padding: 20px;
 }
+
+@media(max-width: 768px) {
+    .pokedex-logo{
+    width: 65%;
+    }
+}
 </style>

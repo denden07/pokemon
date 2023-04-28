@@ -45,7 +45,7 @@
 <script>
 import axios from 'axios';
 import VueAxios from 'vue-axios';
-
+import Swal from 'sweetalert2'
 export default {
     props: [
         'apiUrl',
@@ -104,6 +104,11 @@ export default {
             let limit;
             if(this.total == 150 ) {
                  limit = this.limit += 1
+                 Swal.fire(
+                'Trivia',
+                'Mew was one of the orginal 1st gen pokemon to be ever created  but only accesible through a glitch, thats why I included him, he might get sad lol',
+                'Info'
+                )
             }else {
                  limit = this.limit += 15
             }
